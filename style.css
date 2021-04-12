@@ -53,12 +53,49 @@ display: none;
     display: none;
 }
 
-.input {
+.input-space {
     width: 286px;
-    height: 40px;
+    min-height: 40px;
     border: 1px solid #C4C4C4;
     border-radius: 10px;    
     margin: 0 0 18px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.task-list {
+    list-style-type:none;
+    margin: 0 0 0 0;
+    padding: 5px 0 5px 0;
+    width: 90%;
+}
+
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 15px 0;
+   
+}
+
+.task-list li:first-child {
+    margin: 0 0 10px 0;
+}
+
+.task-list li:last-child {
+    margin: 0 0 0 0;
+}
+
+.task-list li img {
+    margin: 0 10px 0 0;
+}
+
+.task-list li input {
+    width: 80%;
+    outline:none;
+    border: none;
 }
 
 .button {
@@ -92,4 +129,5 @@ display: none;
     top: -13px;
     left: -13px;
 }
+
 
