@@ -42,28 +42,20 @@
 }
 
 .grayUParrow {
-display: none;
+display: block;
 background: url(img/grayUParrow.svg) no-repeat;
 width: 25px;
 height: 15px;
 border:none;
 }
 
-.blackDOWNarrow {
-    display: none;
-    background: url(img/blackDOWNarrow.svg) no-repeat;
-    width: 25px;
-    height: 15px;
-    border:none;
-}
-
-.blackUParrow {
-    display: none;
+.grayUParrow:hover, .grayUParrow:focus {
+    display: block;
     background: url(img/blackUParrow.svg) no-repeat;
     width: 25px;
     height: 15px;
     border:none;
-}
+    }
 
 .grayDOWNarrow {
     display: block;
@@ -73,7 +65,7 @@ border:none;
     border:none;
 }
 
-.grayDOWNarrow:hover {
+.grayDOWNarrow:hover, .grayDOWNarrow:focus {
     display: block;
     background: url(img/blackDOWNarrow.svg) no-repeat;
     width: 25px;
@@ -162,7 +154,7 @@ border:none;
     height: 20px;
 }
 
-.toClose:hover {
+.toClose:hover, .toClose:focus {
     background: url(img/purpleСross.svg) no-repeat;
     border:none;
     padding: 0 0 0 0;
