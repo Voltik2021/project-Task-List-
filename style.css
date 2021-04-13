@@ -43,18 +43,42 @@
 
 .grayUParrow {
 display: none;
+background: url(img/grayUParrow.svg) no-repeat;
+width: 25px;
+height: 15px;
+border:none;
 }
 
 .blackDOWNarrow {
     display: none;
+    background: url(img/blackDOWNarrow.svg) no-repeat;
+    width: 25px;
+    height: 15px;
+    border:none;
 }
 
 .blackUParrow {
     display: none;
+    background: url(img/blackUParrow.svg) no-repeat;
+    width: 25px;
+    height: 15px;
+    border:none;
 }
 
 .grayDOWNarrow {
     display: block;
+    background: url(img/grayDOWNarrow.svg) no-repeat;
+    width: 25px;
+    height: 15px;
+    border:none;
+}
+
+.grayDOWNarrow:hover {
+    display: block;
+    background: url(img/blackDOWNarrow.svg) no-repeat;
+    width: 25px;
+    height: 15px;
+    border:none;
 }
 
 .input-space {
@@ -90,10 +114,6 @@ display: none;
 
 .task-list li:last-child {
     margin: 0 0 0 0;
-}
-
-.task-list li img {
-    margin: 0 10px 0 0;
 }
 
 .task-list li input {
@@ -133,5 +153,23 @@ display: none;
     top: -13px;
     left: -13px;
 }
+
+.toClose {
+    background: url(img/cross.svg) no-repeat;
+    border:none;
+    padding: 0 0 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+.toClose:hover {
+    background: url(img/purpleСross.svg) no-repeat;
+    border:none;
+    padding: 0 0 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+
 
 

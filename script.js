@@ -1,8 +1,7 @@
 let buttonAdd = document.querySelector('.button');
 let taskList = document.querySelector('.task-list');
 let list = document.querySelector('.task-list').firstElementChild;
-let toClose = document.querySelector('.task-list').firstElementChild.lastElementChild;
-
+let toClose = document.querySelector('.toClose')
 let grayDOWNarrow = document.querySelector('.grayDOWNarrow');
 let blackUParrow = document.querySelector('.blackUParrow');
 let blackDOWNarrow = document.querySelector('.blackDOWNarrow');
