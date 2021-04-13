@@ -6,6 +6,7 @@ let toClose = document.querySelector('.task-list').firstElementChild.lastElement
 let grayDOWNarrow = document.querySelector('.grayDOWNarrow');
 let blackUParrow = document.querySelector('.blackUParrow');
 let blackDOWNarrow = document.querySelector('.blackDOWNarrow');
+let grayUParrow = document.querySelector('.grayUParrow');
 
 
 
@@ -27,24 +28,60 @@ toClose.addEventListener('click', (e) => {
 
 grayDOWNarrow.addEventListener('click', (e) => {
     let htmlColection = taskList.querySelectorAll('li');
-    sortArr(htmlColection);  
+    changingTheSorting('blackUParrow') 
+    sortArr(htmlColection, 'true'); 
+});
 
+blackUParrow.addEventListener('click', (e) => {
+    let htmlColection = taskList.querySelectorAll('li');
+    changingTheSorting('blackDOWNarrow') 
+    sortArr(htmlColection); 
+});
+
+blackDOWNarrow.addEventListener('click', (e) => {
+    let htmlColection = taskList.querySelectorAll('li');
+    changingTheSorting('upAgain') 
+    sortArr(htmlColection, 'true'); 
 });
 
 
-function sortArr(arr) {
-    let newArr = Array.from(arr);
-    console.log(newArr)
-    newArr.sort((a, b) => {
-        a = a.firstElementChild.value;
-        b = b.firstElementChild.value;        
+
+function changingTheSorting(type) {    
+    blackDOWNarrow.style.display = 'none';
+    grayUParrow.style.display = 'none';
+    grayDOWNarrow.style.display = 'none';
+    blackUParrow.style.display = 'none';
+
+    switch (type) {
+        case 'blackUParrow': 
+            blackUParrow.style.display = 'block';
+            break;
+        case 'blackDOWNarrow':
+            blackDOWNarrow.style.display = 'block';
+            break;  
+        case 'upAgain':
+            blackUParrow.style.display = 'block';
+            break;  
+    };   
+};
+
+
+function sortArr(htmlColection, direction) {
+    let arr = Array.from(htmlColection);
+    let newArr = arr.map((item) => {
+        return item.firstElementChild.value;
+    });
+    
+    newArr.sort((a, b) => {                
         if (a < b) {
-            return -1;
+            return direction === 'true'? -1:1;
         } else if (a > b) {
-            return 1;
+            return direction === 'true'? 1:-1;
         } else {
             return 0;
         }
-    });   
-}
-
+    }); 
+    for (i = 0; i < arr.length; i++) {
+        arr[i].firstElementChild.value = newArr[i]
+    }       
+};

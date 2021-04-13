@@ -53,6 +53,10 @@ display: none;
     display: none;
 }
 
+.grayDOWNarrow {
+    display: block;
+}
+
 .input-space {
     width: 286px;
     min-height: 40px;
