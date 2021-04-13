@@ -41,36 +41,27 @@
     margin-bottom: 11px;
 }
 
+.sortArrow {
+    display: block;
+    width: 25px;
+    height: 15px;
+    border:none;
+}
+
 .grayUParrow {
-display: block;
 background: url(img/grayUParrow.svg) no-repeat;
-width: 25px;
-height: 15px;
-border:none;
 }
 
-.grayUParrow:hover, .grayUParrow:focus {
-    display: block;
-    background: url(img/blackUParrow.svg) no-repeat;
-    width: 25px;
-    height: 15px;
-    border:none;
-    }
-
-.grayDOWNarrow {
-    display: block;
-    background: url(img/grayDOWNarrow.svg) no-repeat;
-    width: 25px;
-    height: 15px;
-    border:none;
+.grayUParrow:hover, .grayUParrow:focus {    
+    background: url(img/blackUParrow.svg) no-repeat;    
 }
 
-.grayDOWNarrow:hover, .grayDOWNarrow:focus {
-    display: block;
+.grayDOWNarrow {    
+    background: url(img/grayDOWNarrow.svg) no-repeat;    
+}
+
+.grayDOWNarrow:hover, .grayDOWNarrow:focus {    
     background: url(img/blackDOWNarrow.svg) no-repeat;
-    width: 25px;
-    height: 15px;
-    border:none;
 }
 
 .input-space {
