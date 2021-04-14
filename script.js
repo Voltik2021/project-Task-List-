@@ -3,12 +3,6 @@ let taskList = document.querySelector('.task-list');
 let list = document.querySelector('.task-list').firstElementChild;
 let toClose = document.querySelector('.toClose')
 let grayDOWNarrow = document.querySelector('.form-img').firstElementChild;
-console.log(grayDOWNarrow)
-
-
-
-
-
 
 
 buttonAdd.addEventListener('click', () => {

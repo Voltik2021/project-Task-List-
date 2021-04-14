@@ -18,16 +18,13 @@
     align-items: center;
     border: 1px solid #C4C4C4;;
     border-radius: 10px;
-
-
-
 }
 
 .heigth-color {
     width: 336px;
     height: 28px;
-    background-color:#FFDC40;
-    border-radius: 10px 10px 0 0;   
+    background-color:#FFDC40;;
+    border-radius: 10px 10px 0 0; 
 }
 
 .form-title {   
@@ -73,7 +70,6 @@ background: url(img/grayUParrow.svg) no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .task-list {
@@ -83,12 +79,10 @@ background: url(img/grayUParrow.svg) no-repeat;
     width: 90%;
 }
 
-
 .task-list li {
     display: flex;
     justify-content: space-between;
     margin: 15px 0 15px 0;
-   
 }
 
 .task-list li:first-child {
@@ -110,47 +104,30 @@ background: url(img/grayUParrow.svg) no-repeat;
     height: 42px;
     margin: 18px 0 0 0;
     border-radius: 71px;
-    background: #833AE0;
-    border:none;
-    color: white;
+    background: url(img/button.svg) no-repeat;
+    border:none;    
     margin: 0 0 19px 0;
-    
-    
+}
+
+.button:hover {
+    background: url(img/buttonhov.svg) no-repeat;
 }
 
 .plus-button-relativ {
     position: relative;
 }
 
-.plus-button {
-    height: 42px;
-    width: 42px;
-    color: white;
-    border-radius: 50%;
-    background-color: #9953F1;
-    margin: 0 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -13px;
-    left: -13px;
-}
-
 .toClose {
     background: url(img/cross.svg) no-repeat;
     border:none;
     padding: 0 0 0 0;
+    margin: 0 8px 0 0;
     width: 20px;
     height: 20px;
 }
 
 .toClose:hover, .toClose:focus {
-    background: url(img/purpleСross.svg) no-repeat;
-    border:none;
-    padding: 0 0 0 0;
-    width: 20px;
-    height: 20px;
+    background: url(img/purpleСross.svg) no-repeat;   
 }
 
 
